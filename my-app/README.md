@@ -1,24 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+For Backend
+Node.js , express js
+For Frontend
+Next js with shadcn
 
-## Getting Started
 
-First, run the development server:
+## 🔧 Prerequisites
+
+- [XAMPP](https://www.apachefriends.org/index.html)
+- Node.js and npm installed
+## 🧑‍💻 Installation Steps
+
+### 1. Install XAMPP
+
+Download and install **XAMPP** on your machine from [https://www.apachefriends.org](https://www.apachefriends.org).
+
+### 2. Start Apache and MySQL
+
+- Open the **XAMPP Control Panel**
+- Click **Start** on both **Apache** and **MySQL**
+
+### 3. Create the Database
+
+1. Open **phpMyAdmin** (visit [http://localhost/phpmyadmin](http://localhost/phpmyadmin))
+2.create new database with name mcq_exam import sql file shared in repo
+
+3. Import the `.sql` file shared in the repository into the `mcq_exam` database.
+
+---
+
+## 🖥️ Backend Setup
+
+Open a terminal and run:
+
+```bash
+cd backend
+npm install
+node index.js
+```
+          ## 🚀 Running the Frontend (Next.js)
+
+### Step 4: Start the Next.js Project
+
+In your terminal, navigate to the frontend directory "cd my-app" and run:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### step5.Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### step6.Click on Take a test button you will get login window
+### step7.Enter Username= student1@gmail.com and password = student1 click on login button
+### step8.You will get Dashboard in that click on any subject to give test
+### step9.After clicking that any subject you will see question and 4 option with 10min timer
 
 ## Learn More
 
@@ -31,6 +63,5 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
